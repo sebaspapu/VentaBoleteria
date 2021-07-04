@@ -164,7 +164,7 @@ public class Estadio extends VentaBoletas{
         Cliente C = new Cliente();
         //VentaBoletas V = new VentaBoletas();
         
-        System.out.println("\nTRIBUNA SUR (Inicialmente VACIA)!\n");
+        System.out.println("\nTRIBUNA NORTE (Inicialmente VACIA)!\n");
         
         for(int filas=0;filas<5; filas++){
             
@@ -283,7 +283,7 @@ public class Estadio extends VentaBoletas{
         Cliente C = new Cliente();
         //VentaBoletas V = new VentaBoletas();
         
-        System.out.println("\nTRIBUNA SUR (Inicialmente VACIA)!\n");
+        System.out.println("\nTRIBUNA ORIENTE (Inicialmente VACIA)!\n");
         
         for(int filas=0;filas<5; filas++){
             
@@ -400,7 +400,7 @@ public class Estadio extends VentaBoletas{
         Cliente C = new Cliente();
         //VentaBoletas V = new VentaBoletas();
         
-        System.out.println("\nTRIBUNA SUR (Inicialmente VACIA)!\n");
+        System.out.println("\nTRIBUNA OCCIDENTE (Inicialmente VACIA)!\n");
         
         for(int filas=0;filas<5; filas++){
             
