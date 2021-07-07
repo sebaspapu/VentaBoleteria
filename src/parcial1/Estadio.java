@@ -35,10 +35,16 @@ public class Estadio extends VentaBoletas{
     public static void setTotalPagar(double TotalPagar) {
         TotalPagar = TotalPagar;
     }
-    
+       
     public void TribunaSur(){
         
-        int opcion;
+        
+        //int CantidadBoletas;
+            
+               try{
+                   
+                   //problema 
+                   int opcion;
         int n=0;
         int TribunaVacia[][] = new int [5][10];
         int contador=0;
@@ -49,8 +55,8 @@ public class Estadio extends VentaBoletas{
         //VentaBoletas V = new VentaBoletas();
         
         System.out.println("\nTRIBUNA SUR (Inicialmente VACIA)!\n");
-        
-        for(int filas=0;filas<5; filas++){
+        //Aqui comenté la tribuna inicialmente vacia
+  /*      for(int filas=0;filas<5; filas++){
             
             for(int columnas=0; columnas<10;columnas++){
                 
@@ -58,19 +64,22 @@ public class Estadio extends VentaBoletas{
                 
             }System.out.println("");
             
-        }
+        }*/
         
         do{
-        
-        int CantidadBoletas = Integer.parseInt(JOptionPane.showInputDialog(null,"¿ Cual es la Cantidad de Boletas que desea Comprar ?",
+    
+
+         int CantidadBoletas = Integer.parseInt(JOptionPane.showInputDialog(null,"¿ Cual es la Cantidad de Boletas que desea Comprar ?",
                "CANTIDAD BOLETAS",JOptionPane.QUESTION_MESSAGE));
-        
+         
+                
         while(CantidadBoletas > 10){
             
             JOptionPane.showMessageDialog(null,"¡La cantidad de Boletas ingresada es Mayor a 10!");
             CantidadBoletas = Integer.parseInt(JOptionPane.showInputDialog(null,"¡Ingrese una cantidad de Boletas Menor a 10!",
                "¡CANTIDAD BOLETAS MENOR A 10!",JOptionPane.INFORMATION_MESSAGE));            
-        }        
+        }
+               
         CantidadB = CantidadBoletas;        
         
 //      int filaAleatoria = (int) (Math.random()*((0-4))) ;
@@ -150,6 +159,20 @@ public class Estadio extends VentaBoletas{
         JOptionPane.showMessageDialog(null,"\nEl total a pagar para la Persona" +Arrays.toString(C.getNombre())+" es: $"+TotalPagar+ " Pesos. ","TOTAL A PAGAR",
                 JOptionPane.INFORMATION_MESSAGE);
 //        }
+         
+         
+        }catch(NumberFormatException e){
+    
+            JOptionPane.showMessageDialog(null, "¡El tipo de valor ingresado es incorrecto!");
+            JOptionPane.showMessageDialog(null, "¡Intenta nuevamente!");
+        }
+        
+        
+        
+            
+            
+                      
+        
     }
     
     public void TribunaNorte(){
@@ -267,8 +290,8 @@ public class Estadio extends VentaBoletas{
                 JOptionPane.INFORMATION_MESSAGE);
 //        }
         
-        
-        
+
+         
     }
     
     public void TribunaOriente(){
